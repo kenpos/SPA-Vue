@@ -19,11 +19,14 @@
 </template>
 
 <script>
-import { mapMutations } from "vuex";
-
 export default {
    methods:{
-   ...mapMutations(["increment","decrement"])
+     increment(){
+       this.$store.dispatch("increment", 2);
+     },
+     decrement(){
+       this.$store.dispatch("decrement", 2);
+     }
   }
 };
 </script>
