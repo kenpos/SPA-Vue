@@ -20,11 +20,11 @@ export default new Vuex.Store({
         }
     },
     actions:{
-        increment(context,number){
-            context.commit('increment',number);
+        increment({commit},number){
+            commit('increment',number);
         },
-        decrement(context,number){
-            context.commit('decrement',number);
+        decrement({commit},number){
+            commit('decrement',number);
         }
     }
 });
